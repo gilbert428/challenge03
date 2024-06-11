@@ -5,7 +5,7 @@
 # Load the ActiveRecord library
 load 'ar.rb'
 
-# Find products with a stock quantity greater than 20
+# Find products with a stock quantity greater than 40
 products_to_update = Product.where('stock_quantity > ?', 40)
 
 # Iterate over each product and increase its stock quantity by 5

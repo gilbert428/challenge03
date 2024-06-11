@@ -14,7 +14,7 @@ products_above_10 = Product.where('price > ? AND name LIKE ?', 10, 'C%')
 puts "Products above $10 with names starting with 'C':"
 products_above_10.each { |p| puts p.name }
 
-# Products with low stock (less than 3)
+# Products with low stock (less than 5)
 low_stock_products = Product.where('stock_quantity < ?', 5)
 puts "Low stock products count: #{low_stock_products.count}"
 
